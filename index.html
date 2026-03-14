@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스프링부트 입문 실전 학습 로드맵</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="badge">Beginner Friendly</p>
+        <h1>스프링부트 게시판 · 회원가입 · 로그인<br />완전 입문 학습 사이트</h1>
+        <p>
+          코드를 "왜" 이렇게 쓰는지 이해하고, 직접 따라 치고, 외우고, 퀴즈로 복습하는
+          학습 자료입니다.
+        </p>
+        <nav>
+          <a href="#chapters" class="btn primary">챕터 학습 시작</a>
+          <a href="#quiz" class="btn secondary">랜덤 퀴즈 풀기</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="howto" class="panel">
+        <h2>학습 방법 (초급자 기준)</h2>
+        <ol>
+          <li><strong>1회독:</strong> 설명을 읽고 코드를 그대로 타이핑합니다.</li>
+          <li><strong>2회독:</strong> 주석을 제거하고, 흐름(요청 → 서비스 → DB)을 입으로 설명합니다.</li>
+          <li><strong>3회독:</strong> 빈 화면에서 핵심 코드(Controller, Service, Entity)를 재작성합니다.</li>
+          <li><strong>복습:</strong> 챕터별 퀴즈를 랜덤으로 풀어 약점 파트를 찾습니다.</li>
+        </ol>
+      </section>
+
+      <section id="chapters" class="panel">
+        <h2>챕터별 학습</h2>
+        <div id="chapter-list" class="chapter-list"></div>
+      </section>
+
+      <section id="quiz" class="panel">
+        <h2>챕터 복습 랜덤 퀴즈</h2>
+        <div class="quiz-controls">
+          <label for="chapterFilter">챕터 선택</label>
+          <select id="chapterFilter">
+            <option value="all">전체 챕터</option>
+          </select>
+
+          <label for="quizCount">문항 수</label>
+          <input id="quizCount" type="number" min="5" max="50" value="10" />
+
+          <button id="generateQuiz" class="btn primary">퀴즈 생성</button>
+        </div>
+
+        <div id="quizMeta" class="quiz-meta"></div>
+        <form id="quizForm" class="quiz-form"></form>
+        <div class="quiz-actions">
+          <button id="submitQuiz" class="btn secondary" type="button">채점하기</button>
+        </div>
+        <div id="quizResult" class="quiz-result"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 SpringBoot Study Roadmap · GitHub Pages 배포 가능</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
