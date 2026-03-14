@@ -1,0 +1,161 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #38bdf8;
+  --secondary: #22c55e;
+  --border: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  background: linear-gradient(180deg, #020617, #0b1120);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.hero {
+  padding: 3rem 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.2), transparent 45%);
+}
+
+.hero-inner,
+main,
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.35;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  margin-right: 0.6rem;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary {
+  background: var(--primary);
+  color: #001018;
+}
+
+.secondary {
+  background: var(--secondary);
+  color: #05210f;
+}
+
+.panel {
+  margin: 1rem;
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(17, 24, 39, 0.85);
+}
+
+.chapter-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem;
+}
+
+.chapter {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  background: #0b1220;
+}
+
+.chapter pre {
+  white-space: pre-wrap;
+  background: #030712;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 0.8rem;
+  overflow-x: auto;
+}
+
+.chapter ul {
+  padding-left: 1.1rem;
+}
+
+.quiz-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.7rem;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+select,
+input {
+  width: 100%;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #020617;
+  color: var(--text);
+  padding: 0.55rem;
+}
+
+.quiz-question {
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  padding: 0.9rem;
+  margin-bottom: 0.8rem;
+  background: #030712;
+}
+
+.quiz-question label {
+  display: block;
+  margin: 0.35rem 0;
+  cursor: pointer;
+}
+
+.quiz-meta,
+.quiz-result {
+  color: var(--muted);
+  margin: 0.6rem 0 1rem;
+}
+
+footer {
+  color: var(--muted);
+  padding: 1.5rem 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 2rem;
+  }
+
+  .panel {
+    margin: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
