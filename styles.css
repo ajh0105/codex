@@ -103,6 +103,17 @@ h3 {
   padding-left: 1.1rem;
 }
 
+.lecture-topic {
+  border-top: 1px dashed #334155;
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+}
+
+.lecture-topic h4 {
+  margin: 0 0 0.4rem;
+  color: #bae6fd;
+}
+
 .quiz-controls {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
